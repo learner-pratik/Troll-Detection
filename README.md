@@ -1,2 +1,2 @@
 # Troll-Detection
- 
+ This project helps monitor troll or abusive comments on social media accounts of the user. The project consists of various bots for different social media applications which detect and then hide or remove those comments from the user posts. It uses a ML Trained model to identify the bad comments. Along with that, this project also uses a Chrome Extension to monitor bad comments on websites other than popular social media apps. All the abusive comments are reported over to the website.
