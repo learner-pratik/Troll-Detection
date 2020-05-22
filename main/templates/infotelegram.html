@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cyber Troll Detection</title>
+	<style>
+		th{
+			text-align: left;
+		}
+		th, td {
+  			padding: 15px;
+  			font-size: 20px;
+		}
+		table {
+			margin-top: 10px;
+  			border-spacing: 5px;
+  			border-collapse: collapse;
+  			border:1px solid black;
+		}
+		table tr:nth-child(even) {
+  			background-color: #eee;
+		}
+		table tr:nth-child(odd) {
+  		background-color: #A9A9A9;
+		}
+		table th {
+  		color: white;
+  		background-color: black;
+		}
+		.top{
+			background-color: black;
+			color:white;
+			text-align: center;
+			font-size: 35px;
+			padding:20px;
+		}
+		button{
+			background-color: black;
+			color:white;
+			padding:10px;
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<p>Troll Comments</p>
+	</div>
+	<table style="width:100%">
+  		<tr>
+    		<th>Username</th>
+    		<th>Comment</th>
+            <th>Action</th>
+  		</tr>
+          {% for i in user %}
+		<tr>
+            {% for j in i %}
+            <td>{{ j }}</td>
+            {% endfor %}
+    		<!-- <td>Jill</td>
+    		<td>Smith</td> -->
+    		<td><button>Report</button></td>
+  		</tr>
+          {% endfor %}
+</table>
+</body>
+</html>
